@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogos e Filmes - página</title>
+
+    <!-- CSS: estilo css, bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- barra de navegação superior linha 28 até 42 -->
+    <nav class="navbar bg-warning navbar-expand-md">
+
+        <!--div do logo do site-->
+        <div class="navbar-brand d-flex">
+            <img src="imagens/imagem.png" alt="logo_site" class="tamanho">
+            <h5 class="align-self-center">Jogos e Filmes</h5>
+        </div>
+
+        <!-- div que será oculta -->
+        <div id="id" class="collapse navbar-collapse justify-content-between">
+            <div></div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#lan" class="nav-link">Lançamentos</a></li>
+                <li class="nav-item"><a href="#jog" class="nav-link">Jogos</a></li>
+                <li class="nav-item"><a href="#fil" class="nav-link">Filmes</a></li>
+            </ul>
+            <a href="#sobre" id="link-social">Sobre o criador</a>
+        </div>
+
+        <!-- botão responsivo -->
+        <button class="navbar-toggler navbar-light bg-white" data-toggle="collapse" data-target="#id">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+
+    <div class="container-fluid">
+        
+        <div class="text-center">
+            <h2 class="margem" id="lan">Lançamentos</h2>
+
+            <h4 class="cor">Jogos que chegam em 2020</h4>
+
+            <div class="conteudo-flex">
+                <ul id="sliders" class="alinhadiv">
+                    <li class="slider-active">
+                        <img src="imagens/jogo-1.jpg" class="tamanhos" alt="Fifa 21">
+                        <p class="blockquote margem">Fifa 21</p>
+                    </li>
+                    <li>
+                        <img src="imagens/jogo-2.jpg" class="tamanhos" alt="Cyberpunk 2077">
+                        <p class="blockquote margem">Cyberpunk 2077</p>
+                    </li>
+                    <li>
+                        <img src="imagens/jogo-3.png" class="tamanhos" alt="Homem Aranha">
+                        <p class="blockquote margem">Homem Aranha</p>
+                    </li>
+                </ul>
+            </div>
+
+            <h4 class="cor">Filmes que chegam em 2020</h4>
+
+            <div class="conteudo-flex">
+                <ul id="sliders_2" class="alinhadiv">
+                    <li class="slider-active">
+                        <img src="imagens/filme-1.jpg" class="tamanhos" alt="Fifa 21">
+                        <p class="blockquote margem">Viúva Negra</p>
+                    </li>
+                    <li>
+                        <img src="imagens/filme-2.jpg" class="tamanhos" alt="Cyberpunk 2077">
+                        <p class="blockquote margem">Mulher Maravilha</p>
+                    </li>
+                    <li>
+                        <img src="imagens/filme-3.jpg" class="tamanhos" alt="Homem Aranha">
+                        <p class="blockquote margem">Seol</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-warning my-5 sombra" id="jog">
+
+            <!-- Título -->
+            <h2 class="text-justify p-2" data-anime="left">Tudo sobre jogos</h2>
+
+            <!-- Parágrafo com informações -->
+            <p class="text-justify lead" data-anime="left">
+                Jogos e filmes é o site mais completo sobre jogos do Brasil!
+                Todos os lançamentos, jogos melhor avaliados e mais vendidos.
+            </p>
+
+            <!-- Conteúdo e paginação -->
+            <div class="container">
+
+                <!-- div que tem a paginação -->
+                <div>
+                    <ul class="pagination justify-content-center" data-anime="left">
+                        <li class="page-item active" id="link1"> <a class="page-link" href="#jog"
+                                onclick="Clicado(1,2,3, 'jogo')">Jogos populares de 2020</a>
+                        </li>
+                        <li class="page-item" id="link2"> <a class="page-link" href="#jog"
+                                onclick="Clicado(2,1,3,'jogo')">Mais vendidos de 2020</a>
+                        </li>
+                        <li class="page-item" id="link3"> <a class="page-link" href="#jog"
+                                onclick="Clicado(3,2,1,'jogo')">Melhor avaliados de 2020</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- div que tem o conteudo -->
+                <div id="conteudo" data-anime="left">
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <img src="imagens/the_last_of_us.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">The Last of Us 2</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/fortnite.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Fortnite</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/cod.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Call of Duty Modern Warfare</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <img src="imagens/Fall Guys.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Fall Guys</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/minecraft.jpeg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Minecraft Dungeons</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/marvel.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Marvel's Avengers</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5 container-fluid">
+            <h2 class="text-center" id="#">Principais Gêneros de Jogos</h2>
+            <div class=" classe">
+                <div class="img">
+                    <img src="imagens/fortnite.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Battle Royale</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/cod.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Tiro em primeira pessoa</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/forza.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Corrida</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/jogo-1.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Esportes</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/the witcher 3.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">RPG</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-warning my-5 sombra" id="fil">
+            <h2 class="text-justify p-2" data-anime="left">Tudo sobre filmes</h2>
+            <p class="text-justify lead" data-anime="left">
+                Jogos e filmes é o site mais completo sobre filmes do Brasil!
+                Todos os lançamentos, filmes melhor avaliados e maiores bilheterias.
+            </p>
+            
+            <div class="container">
+
+                <!-- div que tem a paginação -->
+                <div>
+                    <ul class="pagination justify-content-center" data-anime="left">
+                        <li class="page-item active" id="filme1"> <a class="page-link" href="#fil"
+                            onclick="ClicadoFilme(1,2,3,'filme')">Filmes populares de 2020</a>
+                        </li>
+                        <li class="page-item" id="filme2"> <a class="page-link" href="#fil"
+                                onclick="ClicadoFilme(2,1,3,'filme')">Maiores bilheterias de 2020</a>
+                        </li>
+                        <li class="page-item" id="filme3"> <a class="page-link" href="#fil"
+                                onclick="ClicadoFilme(3,2,1,'filme')">Melhor
+                                avaliados de 2020</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- div que tem o conteudo -->
+                <div id="conteudo_filme" data-anime="left">
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <img src="imagens/365-Dias.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">365 dias</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/o poco.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">O Poço</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/sonic.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Sonic o Filme</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <img src="imagens/modo-aviao.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Modo Avião</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/viver-duas-vezes.jpeg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Viver duas vezes</h5>
+                        </div>
+                        <div class="col-md text-center">
+                            <img src="imagens/a-barraca-do-beijo-2.jpg" alt="" class=" rounded tamanho2 img-fluid mt-1">
+                            <h5 class="blockquote">Barraca do Beijo 2</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5 container-fluid">
+            <h2 class="text-center" id="#">Principais Gêneros de Filmes</h2>
+            <div class=" classe">
+                <div class="img">
+                    <img src="imagens/bad-boys-para-sempre.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Ação</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/filme-3.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Animação</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/gente_grande.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Comédia</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/filme-2.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Ficção Científica</h3>
+                </div>
+                <div class="img">
+                    <img src="imagens/annabele.jpg" class="tamanhos" alt="">
+                    <h3 class="text-center">Terror</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-warning my-5 sombra" id="sobre">
+            <h2 class="text-justify p-2" data-anime="left">Sobre o criador da página</h2>
+            <p class="text-justify lead p-2" data-anime="left">
+                Meu nome é Vinícius Tavares da Silva, tenho 17 anos e desde os 15 anos estou cursando um curso técnico
+                de Informática para a Internet.
+                Desenvolvi esse projeto para treinar meus conhecimentos adquiridos no curso, usando as linguagens HTML5,
+                CSS3 E Javascript,
+                além das bibliotecas do Jquery e Bootstrap 4.
+                Portanto essa página é fictícia e NÃO tem fins comercias, apenas fins de aprendizado.
+                Essa página teve seu desenvolvimento começado em setembro de 2020.
+            </p>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar bg-warning navbar-expand-md alinhaflex">
+        <!-- div que será oculta -->
+        <div class="collapse navbar-collapse">
+            <h4>Entrar em contato</h4>
+        </div>
+
+        <div>
+            <ul class="nav" id="lista2">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/vinicius_tavares_1302/?hl=pt-br"
+                    class="nav-link">Instagram</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/ViniciusTavaresdaSilva1302"
+                    class="nav-link">Facebook</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/Viniciusilvainfo" 
+                    class="nav-link">Github</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#lan" class="nav-link">Lançamentos</a></li>
+                <li class="nav-item"><a href="#jog" class="nav-link">Jogos</a></li>
+                <li class="nav-item"><a href="#fil" class="nav-link">Filmes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- JAVASCRIPT: jquery, popper, bootstrap, script.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>
